@@ -24,7 +24,8 @@ module server {
     })
 
     // Create an HTTP service.
-    http.createServer(app).listen(80, function () {
+    var port = process.env.PORT || 80;
+    http.createServer(app).listen(port, function () {
         console.log('Express server listening on port ' + 80)
     });
     
