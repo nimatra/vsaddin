@@ -3,7 +3,7 @@ module addinServer {
      * server
      */
     class server {
-        
+
         constructor() {
 
             var express = require('express'),
@@ -27,19 +27,19 @@ module addinServer {
                 console.log(req.query)
                 res.end(JSON.stringify(req.query, null, 2))
             });
-            
+
             this.setupHttpServer(app);
         }
-        
-        setupHttpServer(app: any){
+
+        setupHttpServer(app: any) {
             var http = require('http')
-            // Create an HTTP service.
+                // Create an HTTP service.
             var port = process.env.PORT || 80;
-            http.createServer(app).listen(port, function () {
+            http.createServer(app).listen(port, function() {
                 console.log('Express server listening on port ' + 80)
             });
         }
     }
-    
+
     var azureServer = new server();
 }

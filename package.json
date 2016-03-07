@@ -2,7 +2,7 @@
   "name": "vsaddin",
   "version": "1.0.0",
   "description": "Visual Studio work item tracking for Outlook",
-  "main": "server.js",
+  "main": "server/server.js",
   "dependencies": {
     "angular": "^1.5.0",
     "angular-mocks": "^1.5.0",
@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server.js"
+    "start": "node ./server/server"
   },
   "author": "nimatra",
   "license": "MIT"
