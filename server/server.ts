@@ -2,10 +2,12 @@ module server {
     var express = require('express'),
         logger = require('morgan'),
         session = require('express-session')
-
+        
     var Grant = require('grant-express'),
         grant = new Grant(require('./OAuthConfigure.json'))
 
+    var http = require('http')
+    
     var app = express()
     app.use(logger('dev'))
     
@@ -21,10 +23,11 @@ module server {
         res.end(JSON.stringify(req.query, null, 2))
     })
 
-    app.listen(3000, function() {
-        console.log('Express server listening on port ' + 3000)
-    })
-
+    // Create an HTTP service.
+    http.createServer(app).listen(80, function () {
+        console.log('Express server listening on port ' + 80)
+    });
+    
     // app.get('/api', function (req, res) {
     //     res.redirect(__dirname + '/public/api');
     // });
