@@ -6,7 +6,7 @@ var addinServer;
     var server = (function () {
         function server() {
             var express = require('express'), logger = require('morgan'), session = require('express-session');
-            var Grant = require('grant-express'), grant = new Grant(require('./OAuthConfigure.json'));
+            var Grant = require('grant-express'), grant = new Grant(require('./server/OAuthConfigure.json'));
             var app = express();
             app.use(logger('dev'));
             // REQUIRED:

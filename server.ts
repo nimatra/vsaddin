@@ -11,7 +11,7 @@ module addinServer {
                 session = require('express-session')
 
             var Grant = require('grant-express'),
-                grant = new Grant(require('./OAuthConfigure.json'))
+                grant = new Grant(require('./server/OAuthConfigure.json'))
 
             var app = express()
             app.use(logger('dev'))
