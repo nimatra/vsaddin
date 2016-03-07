@@ -1,7 +1,7 @@
 {
     "server": {
         "protocol": "https",
-        "host": "vsaddin.azurewebsites.net/"
+        "host": "vsaddin.azurewebsites.net"
     },
     "visualstudio": {
         "key": "232FC561-E8B3-44D4-91B3-7194DF775D6C",
