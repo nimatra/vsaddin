@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>VSTS</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="stylesheet" href="vsts.style.css" type="text/css" />
+        
+        <!-- Library Scripts -->
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/outlook-web-16.01.js"></script>
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/en-us/office_strings.js"></script>
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/en-us/outlook_strings.js"></script>
+        <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-mocks.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-view.js"></script>
+        
+        <!-- Application Script -->
+        <script src="app/app.js"></script>
+        
+        <!-- Domain Classes -->
+        <script src="app/Common/boot.js"></script>
+        <script src="app/Vsts/vsts.js"></script>
+
+        <!-- Services -->
+        <script src="app/Common/services/common.services.js"></script>
+        <script src="app/Common/services/dataAccessService.js"></script>
+        <script src="app/Common/services/vstsResourceMock.js"></script>
+
+        <!-- Controllers -->
+        <script src="app/List/vstsListCtrl.js"></script>
+        <script src="app/Search/vstsSearchCtrl.js"></script>
+    </head>
+
+    <body ng-app="Vsts">
+        <div class="header">    
+        </div>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </body>
+</html>

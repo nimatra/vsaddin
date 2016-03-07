@@ -1,0 +1,21 @@
+{
+  "name": "vs addin",
+  "version": "1.0.0",
+  "description": "Visual Studio work item tracking for Outlook",
+  "main": "server/server.js",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-mocks": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-view": "^0.0.1",
+    "angularjs": "^0.0.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nimatra",
+  "license": "MIT"
+}

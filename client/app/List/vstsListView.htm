@@ -1,0 +1,13 @@
+<div class="listView">
+    <table class="table">
+        <tr ng-repeat="gif in vm.gifs">
+            <td>
+                <img ng-src="gif.images.downsized.url"
+                     style="image"
+                     title="{{gif.bitly_url}}"
+                     ng-href='#insert' 
+                     ng-click="vm.click()"/>   
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+<div class="searchView">
+    <input type="text" 
+           class="search"
+           data-ng-model="vm.query">
+    </input>
+    <button ng-href='#gifList' ng-click='vm.queryVsts()'>
+        Search
+    </button>
+    <table class="table">
+        <tr ng-repeat="gif in vm.vstsList">
+            <td>
+                <img ng-src="{{gif.images.fixed_width_small.url}}"
+                     style="image"
+                     title="{{gif.bitly_url}}"
+                     ng-href='#insert' 
+                     ng-click="vm.click(gif)"/>   
+            </td>
+        </tr>
+    </table>
+</div>
